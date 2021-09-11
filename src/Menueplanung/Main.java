@@ -1,6 +1,6 @@
 package Menueplanung;
 
-public class Main  {
+public class Main {
     public static void main(String[] args) {
         MenuePlaner mp = new MenuePlaner(getZutatenListe());
         mp.erstelleSpeiseplan();

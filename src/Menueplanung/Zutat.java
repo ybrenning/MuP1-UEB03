@@ -29,10 +29,10 @@ public class Zutat {
 
     @Override
     public boolean equals(Object vergleichsobjekt) {
-        if( vergleichsobjekt instanceof Zutat )
-        {
+        if (vergleichsobjekt instanceof Zutat) {
             return equals((Zutat)vergleichsobjekt);
         }
+
         return false;
     }
 

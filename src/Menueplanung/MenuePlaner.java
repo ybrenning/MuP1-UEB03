@@ -7,7 +7,7 @@ public class MenuePlaner {
     private Map<String,List<Gericht>> speiseplan;
 
     public MenuePlaner(Zutat[] zutatenArray) {
-        zutatenListe = new ArrayList<Zutat>(Arrays.asList(zutatenArray));
+        zutatenListe = new ArrayList<>(Arrays.asList(zutatenArray));
         speiseplan = new HashMap<>();
     }
 
@@ -33,7 +33,7 @@ public class MenuePlaner {
     }
 
     private void erstelleMenueFuerWochentag(String tag, int anzahlGerichte) {
-        List<Gericht> gerichte = new ArrayList<Gericht>();
+        List<Gericht> gerichte = new ArrayList<>();
 
         for (int i = 0; i < anzahlGerichte; i++) {
             gerichte.add(erstelleGericht());
